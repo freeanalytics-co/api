@@ -1,0 +1,27 @@
+{
+  "name": "quick",
+  "author": {
+    "name": "Herbie Vine",
+    "url": "https://herbievine.com"
+  },
+  "scripts": {
+    "dev": "wrangler dev",
+    "deploy": "wrangler deploy --minify",
+    "types": "wrangler types --x-include-runtime",
+    "format": "bunx biome format --write drizzle.config.ts src",
+    "lint": "bunx biome lint --write drizzle.config.ts src",
+    "check": "bunx biome check --write drizzle.config.ts src",
+    "db:gen": "drizzle-kit generate",
+    "db:studio": "drizzle-kit studio"
+  },
+  "dependencies": {
+    "drizzle-orm": "^0.36.0",
+    "hono": "^4.6.8"
+  },
+  "devDependencies": {
+    "@biomejs/biome": "1.9.4",
+    "@cloudflare/workers-types": "^4.20241022.0",
+    "drizzle-kit": "^0.27.1",
+    "wrangler": "^3.83.0"
+  }
+}
