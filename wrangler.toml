@@ -1,11 +1,10 @@
-name = "quick"
+name = "api"
 main = "src/index.ts"
 compatibility_date = "2024-11-03"
+compatibility_flags = ["nodejs_compat"]
 
-# compatibility_flags = [ "nodejs_compat" ]
-
-# [vars]
-# MY_VAR = "my-variable"
+[vars]
+JWT_SECRET = "secret"
 
 # [[kv_namespaces]]
 # binding = "MY_KV_NAMESPACE"
